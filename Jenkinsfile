@@ -25,7 +25,7 @@ pipeline {
         // One or more steps need to be included within the steps block.
 
         
-        sh "./LT  --user ${LT_USERNAME} --key ${LT_ACCESS_KEY} &",
+        sh './LT  --user ${LT_USERNAME} --key ${LT_ACCESS_KEY} &',
         sh 'npm run local'
       }
     }
