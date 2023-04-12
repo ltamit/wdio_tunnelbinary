@@ -2,7 +2,7 @@ var assert = require('assert');
 
 describe('Lambdatest Local Testing', function() {
   it('can check tunnel working', async function () {
-    await browser.url('http://localhost.lambdatest.com/todo.html')
+    await browser.url('http://localhost/todo.html')
     const firstElement = await browser.$('*[name="li1"]');
     await firstElement.click();
     const secondElement = await browser.$('*[name="li2"]');
