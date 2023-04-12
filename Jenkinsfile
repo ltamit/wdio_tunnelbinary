@@ -18,7 +18,8 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh './LT --user ${LT_USERNAME} --key ${LT_ACCESS_KEY} && npx wdio run conf/local.conf.js'
+        sh "./LT --user ${LT_USERNAME} --key ${LT_ACCESS_KEY} &"
+        sh 'npx wdio run conf/local.conf.js'
       }
     }
   }
