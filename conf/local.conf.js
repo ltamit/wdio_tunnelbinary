@@ -9,7 +9,7 @@ exports.config = {
   capabilities: [
     {
       browserName: "chrome",
-      version: "65.0",
+      version: "99.0",
       platform: "WIN10",
       name: "webdriverIO-local_test",
       build: "webdriverIO-lambdatest",
@@ -17,6 +17,7 @@ exports.config = {
       video: true,
       console: true,
       network: true,
+      tunnel: true
     },
   ],
 
